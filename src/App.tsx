@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Autocomplete, Button, TextField } from '@mui/material';
+import { currencies } from './clients/exchanger_api';
+import { RatesHeader } from './components/RatesHeader';
+import { GraphsHeader } from './components/GraphsHeader';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Currency exchanger</p>
       </header>
+      <body className="App-body">
+        <div className="currency-rates">
+          <RatesHeader />
+          <div className="rates-container"></div>
+        </div>
+        <div className="currency-graphs">
+          <GraphsHeader />
+          <div className="graphs-container"></div>
+        </div>
+      </body>
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.graphs-header {
+    display: flex;
+    align-items: center;
+  }
+  .graphs-dates {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  .graphs-currencies {
+    display: flex;
+    justify-content: space-around;
+  }
