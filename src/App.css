@@ -16,6 +16,7 @@
 .App-body {
     display: flex;
     flex-direction: row;
+    background: #F6F8FB;
 }
 
 .currency-rates {
@@ -26,19 +27,14 @@
   margin-top: 30px;
 }
 
+.rates-container {
+  border-radius: 8px;
+  border: 1px solid var(--stroke, #E7E7E7);
+  background: var(--white, #FFF);
+  display: flex;
+  width: 100%;
+}
+
 .currency-graphs {
   width: 40%;
-}
-.graphs-header {
-  display: flex;
-  align-items: center;
-}
-.graphs-dates {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 10px;
-}
-.graphs-currencies {
-  display: flex;
-  justify-content: space-around;
 }

@@ -1,6 +1,7 @@
 .graphs-header {
     display: flex;
     align-items: center;
+    height: 120px;
   }
   .graphs-dates {
     display: flex;

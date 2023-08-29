@@ -1,5 +1,5 @@
 import { Autocomplete, Button, TextField } from "@mui/material";
-import { currencies } from "../clients/exchanger_api";
+import { BASE_CURRENCIES, currencies } from "../clients/exchangerApi";
 import './GraphsHeader.css'
 
 export function GraphsHeader() {
@@ -25,7 +25,7 @@ export function GraphsHeader() {
                         <Autocomplete
                             disablePortal
                             id="currency-rate-from"
-                            options={currencies}
+                            options={BASE_CURRENCIES}
                             sx={{ width: "40%" }}
                             renderInput={(params) => <TextField {...params} label="FROM" />}
                         />
